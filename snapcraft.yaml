@@ -1,0 +1,13 @@
+name: warden
+version: 0
+summary: warden is a tool for managing usb devices
+description: warden is a tool for manager usb devices in Linux
+confinement: strict
+
+parts:
+    warden:
+        plugin: go
+        source: .
+apps:
+    warden:
+        command: ./bin/warden
